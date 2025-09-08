@@ -1,0 +1,32 @@
+.admin-dashboard {
+  padding: 30px;
+}
+
+.admin-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.admin-orders-table th,
+.admin-orders-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.admin-orders-table th {
+  background-color: #f5f5f5;
+}
+
+.admin-orders-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.admin-orders-table ul {
+  padding-left: 20px;
+  margin: 0;
+}

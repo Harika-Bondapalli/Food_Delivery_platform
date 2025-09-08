@@ -1,0 +1,213 @@
+/* Root Container */
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  color: #2d2d2d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  border-left: 6px solid #4caf50;
+  padding-left: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Order Filter Dropdown */
+.order-filter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f1f1f1;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.order-filter label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.order-filter select {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.order-filter select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+/* Orders Grid */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Order Card */
+.order-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #4caf50;
+  border-radius: 10px;
+  padding: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+}
+
+.order-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Status Tracker */
+.status-tracker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.step {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.step.active {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.step.passed {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+/* Order Items */
+.order-items {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.order-items li {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.order-items img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* No Orders */
+.no-orders,
+.error {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  background: #fefefe;
+  border-left: 4px solid #f44336;
+  color: #d32f2f;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.tab:hover {
+  background-color: #ddd;
+  transform: translateY(-2px);
+}
+
+.active-tab {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+}
+.badge {
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 6px;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .order-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-items {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

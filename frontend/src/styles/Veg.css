@@ -1,0 +1,79 @@
+.veg-page {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.veg-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.veg-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.veg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.veg-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.veg-card:hover {
+  transform: scale(1.05);
+}
+
+.veg-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.veg-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.veg-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.veg-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin: 0.5rem 0;
+}
+
+.buy-button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #2e7d32;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #1b5e20;
+}

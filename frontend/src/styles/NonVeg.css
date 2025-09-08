@@ -1,0 +1,69 @@
+.nonveg-page {
+  padding: 40px 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+.nonveg-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #c0392b;
+}
+
+.nonveg-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.nonveg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.nonveg-card {
+  background-color: #fbe9e7;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.nonveg-card:hover {
+  transform: scale(1.05);
+}
+
+.nonveg-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  padding: 10px 20px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #c62828;
+}

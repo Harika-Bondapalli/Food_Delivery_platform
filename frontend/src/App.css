@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff5f2;
+  color: #333;
+   overflow-x: hidden;
+  width: 100%;
+}
+
+.app {
+  background-color: #fff5f2;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section spacing */
+.section {
+  padding: 4rem 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('/assets/hero-bg.jpg') no-repeat center/cover;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  padding: 6rem 2rem;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ff6f61;
+}
+
+/* Different background shades for sections */
+.chef-section {
+  background-color: #fff;
+}
+
+.best-selling-section {
+  background-color: #ffebe6;
+}
+
+.todays-meals-section {
+  background-color: #ffe4db;
+}
+
+/* Footer */
+footer {
+  background-color: #ff6f61;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
